@@ -12,47 +12,6 @@
 	background-size: cover;
 	background-position: center;
 }
-
-.headBar {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 5px 0;
-	cursor: pointer;
-}
-
-.headBar ul {
-	flex: 1;
-	text-align: right;
-	padding-right: 50px;
-}
-
-.headBar ul li {
-	display: inline-block;
-	list-style: none;
-	margin: 10px 30px;
-}
-.headBar ul li a {
-	color: white;
-	text-decoration: none;
-	position: relative;
-	font-size: larger;
-}
-.headBar ul li a::after {
-	content: "";
-	width: 0;
-	height: 3px;
-	position: absolute;
-	bottom: -5px;
-	left: 50%;
-	transform: translateX(-50%);
-	background: white;
-	transition: width 0.3s;
-}
-.headBar ul li a:hover::after {
-	width: 50%;
-}
 .text-box {
 	color: white;
 	position: absolute;
@@ -117,4 +76,24 @@ margin-top: 10px;
 	color: white;
 	margin-top: 50px;
 	margin-left: 300px;
+}
+.mainLink {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	font-size: larger;
+}
+.mainLink::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-35%);
+	background: white;
+	transition: width 0.3s;
+}
+.mainLink:hover::after {
+	width: 70%;
 }

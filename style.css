@@ -42,40 +42,42 @@
 	height: 50px;
 }
 .portfolioContainer {
-	width: 650px;
+	width: 80%;
 	display: flex;
- 	flex-wrap: wrap;
-	margin-top: 35px;
-	margin-left: 100px;
-	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 30px auto;
+	gap: 50px;
 }
 .portfolioCard {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	border: solid white 1px;
+	border: solid white 2px;
+	border-radius: 20px;
 	color: white;
-	height: 450px;
+	height: 350px;
 	width: 300px;
 }
 .portfolioCard h3 {
-margin-top: 10px;
+	margin-top: 10px;
 }
 .portfolioIcon {
-	margin-top: 20px;
+	margin-top: 10px;
 	height: 300px;
 	background-position: center;
 	background-size: contain;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
-.portfolioLinks a {
+.portfolioLinks a,
+.homeLink a {
 	text-decoration: none;
 	color: white;
 }
 .portfolioTitle {
 	color: white;
 	margin-top: 50px;
-	margin-left: 300px;
+	text-align: center;
 }
 .mainLink {
 	color: white;
@@ -96,4 +98,12 @@ margin-top: 10px;
 }
 .mainLink:hover::after {
 	width: 70%;
+}
+.homeLink {
+	text-align: center;
+}
+.appLinkInfo {
+	color: white;
+	text-align: center;
+	font-style: italic;
 }
